@@ -1,0 +1,127 @@
+.navbarNarrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    height: 100vh;
+    width: 110px;
+    background-color: $colorBlack;
+    top: 0;
+    left: 0;
+}
+
+//Logo
+.navbarNarrow .logo {
+    width: 100%;
+    height: 70px;
+    background-image: $gradientLilac;
+
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: $pttrnSmallBlack, url(../images/logo/logoBlack.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: left -55px top -28px, center center;
+    }
+}
+
+//Links
+.navbarNarrow ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+
+    li a:hover {
+        opacity: 1;
+    }
+}
+
+//Mail
+@for $i from 0 through 5{
+    .navMail li:nth-child(#{$i + 1}) a {
+        display: block;
+        width: 30px;
+        height: 30px;
+
+        background-image: url(../images/sprites/navIconsSprite.svg);
+        background-position-y: ($i * -30px);
+        margin-bottom: 15px;
+        opacity: 0.4;
+
+
+    }
+}
+
+//Labels
+@for $i from 0 through 2 {
+    .navTags li:nth-child(#{$i + 1}){
+        display: block;
+        width: 14px;
+        height: 14px;
+        margin-bottom: 15px;
+
+        & a {
+            opacity: 0.4;
+        }
+
+        & a:hover {
+            opacity: 1;
+        }
+    } 
+}
+
+.navTags li:nth-child(1) a {
+    @include mailTag($colorHotPink);
+}
+.navTags li:nth-child(2) a {
+    @include mailTag($colorPurple);
+}
+.navTags li:nth-child(3) a {
+    @include mailTag($colorCyan);
+}
+
+//Tools
+@for $i from 0 through 3{
+    .navTools li:nth-child(#{$i + 1}) a {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-image: url(../images/sprites/navIconsSprite.png);
+        background-position: left 0 top ($i * -30px - 180);
+        margin-bottom: 15px;
+        opacity: 0.4;
+    }
+} 
+
+//Profile and settings
+.userInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    a {
+        display: block;
+        border-radius: 50%;
+        border: 2px solid $colorLilac;
+        height: 60px;
+        width: 60px;
+        
+        img {
+            border-radius: 50%;
+            margin: 8px;
+            height: 40px;
+            width: 40px;
+        }
+    }
+
+    .btnSettings-hor {
+        @include btnSettings;
+    }
+}

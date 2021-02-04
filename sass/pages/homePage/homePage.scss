@@ -1,0 +1,21 @@
+@import 'homePageGrid';
+@import 'homePageMixins';
+@import 'homePageHeader';
+
+.homePage-emails {
+    @include homePageModules;
+}
+
+.homePage-meetings {
+    @include homePageModules;
+}
+.homePage-remainders {
+    @include homePageModules;
+}
+
+@media screen and (max-width: 679px) {
+    .homePage-emails {
+        margin-left: 20px;
+        padding-right: 20px;
+    }
+}

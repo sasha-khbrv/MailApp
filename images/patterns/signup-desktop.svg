@@ -1,0 +1,16 @@
+<svg width="1440" height="1024" viewBox="0 0 1440 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1440" height="1024">
+<rect width="1440" height="1024" fill="white"/>
+</mask>
+<g mask="url(#mask0)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1728 1112H1152V556L1728 1112Z" fill="black"/>
+<path opacity="0.03" fill-rule="evenodd" clip-rule="evenodd" d="M864 834H576V556L864 834Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M576 1112H288V834L576 1112Z" fill="black"/>
+<path opacity="0.03" fill-rule="evenodd" clip-rule="evenodd" d="M288 834H0V556L288 834Z" fill="black"/>
+<path opacity="0.03" fill-rule="evenodd" clip-rule="evenodd" d="M1440 556H1152V278L1440 556Z" fill="black"/>
+<path opacity="0.03" fill-rule="evenodd" clip-rule="evenodd" d="M1152 278H864V0L1152 278Z" fill="black"/>
+<path opacity="0.03" fill-rule="evenodd" clip-rule="evenodd" d="M1152 556H576V0L1152 556Z" fill="black"/>
+<path opacity="0.03" fill-rule="evenodd" clip-rule="evenodd" d="M576 556H288V278L576 556Z" fill="black"/>
+<path opacity="0.03" fill-rule="evenodd" clip-rule="evenodd" d="M288 278H0V0L288 278Z" fill="black"/>
+</g>
+</svg>

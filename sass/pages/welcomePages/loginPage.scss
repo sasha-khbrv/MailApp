@@ -1,0 +1,126 @@
+.loginPage-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/patterns/blackTriangle.svg"), $gradientLilac;
+    background-position: left 67% top 0, left top;
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+
+    position: relative;    
+}
+
+.loginPage-header {
+    position: absolute;
+    top: 85px;
+    right: -15px;
+    transform: rotate(90deg);
+}
+
+.loginForm-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.loginForm-container__top {
+    width: 178px;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.loginForm-container__bottom {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.loginForm__inputs {
+    margin: 0 30px;
+}
+
+.loginForm__button {
+    margin-top: 50px;
+}
+
+.asideLink-container {
+    display: none;
+}
+
+//*
+//*Media Queries
+//*
+
+@media screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
+    .loginPage-container {
+        background-image: url("../images/patterns/blackTriangle_Tablet.svg"), $gradientLilac;
+        background-position: left 50% top 0, left top;
+    }
+
+    .loginForm-container__top {
+        width: 215px;
+        margin-left: 230px;
+    }
+
+    .loginForm-container__bottom {
+        justify-content: space-between;
+    }
+    
+    .loginForm__inputs {
+        margin-top: 40px;
+        width: 315px;
+        align-self: center;
+    }
+
+    .loginForm__button {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .loginPage-container {
+        background-image: url("../images/patterns/blackTriangle_Desktop_Login.svg"), $gradientLilac;
+        background-position: right bottom, left top;
+        background-size: cover, cover;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+    }
+
+    .loginPage-header {
+        position: initial;
+        display: flex;
+        justify-content: center;
+        transform: rotate(0deg);
+        margin-bottom: 90px;
+    }
+
+    .loginForm-container {
+        width: 400px;
+        height: 540px;
+        background-color: $colorBlack;
+        
+        box-shadow: 0px 60px 120px rgba(0, 0, 0, 0.3);
+        border-radius: 2px;
+    }
+
+    .loginForm-container__top {
+        width: 178px;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .loginForm__button {
+        margin: 80px 30px 30px;
+    }
+}

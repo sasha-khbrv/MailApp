@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@mixin basicTypo {
+    font-family: 'Karla', sans-serif;
+    color: $colorBlack;
+    margin: 0;
+}
+
+//Basic font size
+body {
+    font-size: 16px;
+}
+
+
+//Headings
+@mixin hugeHeading { //h1 bigger
+    @include basicTypo;
+    font-size: 6.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    letter-spacing: -1px;
+}
+
+@mixin bigHeading { //h1
+    @include basicTypo;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.25em;
+    letter-spacing: -0.8px;
+}
+
+@mixin mediumHeading { //h2
+    @include basicTypo;
+    font-size: 3.125rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    letter-spacing: -0.5px;
+}
+
+@mixin smallHeading { //h3
+    @include basicTypo;
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    letter-spacing: 0;
+}
+
+@mixin xSmallHeading { //h4
+    @include basicTypo;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.2em;
+    letter-spacing: 0;
+}
+
+//Basic text
+@mixin basicText {
+    @include basicTypo;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.375em;
+    letter-spacing: -0.25px;
+}
+
+@mixin mediumText {
+    @include basicTypo;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.6em;
+    letter-spacing: 0;
+}
+
+@mixin smallText {
+    @include basicTypo;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.6em;
+    letter-spacing: 0;
+}
+
+@mixin xSmallText {
+    @include basicTypo;
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: 1.2em;
+    letter-spacing: 1px;
+}

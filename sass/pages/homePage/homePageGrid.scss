@@ -1,0 +1,61 @@
+//main grid
+@media screen and (min-width: 1160px) {
+    .homePageGrid {
+        margin-left: 110px;
+        height: 100vh;
+    
+        display: grid;
+        grid-template-columns:  2fr  1fr 1fr;
+        grid-template-rows: 1fr 3fr;
+        
+        grid-template-areas: 
+            'topLeft topLeft topRight'
+            'bottomLeft bottomCenter bottomRight';
+    
+        .gridItemTopLeft { grid-area: topLeft; }
+        .gridItemTopRight { grid-area: topRight; }
+        .gridItemBottomLeft { grid-area: bottomLeft;}
+        .gridItemBottomCenter { grid-area: bottomCenter; }
+        .gridItemBottomRight { grid-area: bottomRight; }
+    }
+}
+
+
+@media screen and (min-width: 680px) and (max-width: 1159px) {
+    .homePageGrid {
+
+        margin-left: 110px;
+        grid-template-rows: 1fr 4fr;
+       
+        grid-template-areas: 
+            'topLeft topLeft topLeft'
+            'bottomLeft bottomLeft bottomLeft';
+
+        .gridItemTopRight,
+        .gridItemBottomCenter,
+        .gridItemBottomRight {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 679px) {
+    .navbarNarrow {
+        display: none;
+    }
+
+    .homePageGrid {
+
+        grid-template-rows: 1fr 4fr;
+       
+        grid-template-areas: 
+            'topLeft topLeft topLeft'
+            'bottomLeft bottomLeft bottomLeft';
+    
+        .gridItemTopRight,
+        .gridItemBottomCenter,
+        .gridItemBottomRight {
+            display: none;
+        }
+    }
+}

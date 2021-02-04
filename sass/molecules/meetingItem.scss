@@ -1,0 +1,70 @@
+
+.meetingItem {
+    border-left: 2px solid;
+    padding-left: 30px;
+    margin-bottom: 60px;
+    
+    p {
+        margin: 0;
+    }
+
+    .time {
+        @include xSmallHeading;
+        font-weight: 700;
+        margin-bottom: 5px;
+
+        span {
+            @include smallText;
+            text-transform: uppercase;
+        }
+    }
+
+    .title {
+        @include mediumText;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .place {
+        @include linkInternal;
+    }
+
+    .people {
+        margin-top: 30px;        
+
+        img {
+            display: inline-block;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            object-fit:cover;
+            margin-left: -10px;
+            transition: margin-left 0.3s ease-in-out;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        
+        &:hover img {
+            margin-left: 5px;
+            transition: margin-left 0.3s ease-in-out;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &.purple {
+        border-color: $colorPurple;
+    }
+
+    &.hotPink {
+        border-color: $colorHotPink;
+    }
+
+    &.cyan {
+        border-color: $colorCyan;
+    }
+}

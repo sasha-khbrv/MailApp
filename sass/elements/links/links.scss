@@ -1,0 +1,67 @@
+@mixin linkExternal {
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    color: $colorBlack;
+
+    border-bottom: 1px solid $colorBlack;
+    padding-bottom: 5px;
+    transition: padding-bottom 0.3s ease-in-out;
+
+    &:active {
+        opacity: 0.4;
+    }
+
+    &:focus {
+        outline: 2px solid $gradientLilac;
+    }
+
+    &:hover {
+        padding-bottom: 0;
+        transition: padding-bottom 0.1s ease-in-out;
+    }
+}
+
+@mixin mailTag($color) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: $color;
+}
+
+@mixin linkInternal {
+    text-decoration: none;
+    @include smallText;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    transition: border-color 0.2s ease-in-out;
+
+    &:active {
+        opacity: 0.4;
+    }
+
+    &:focus {
+        outline: 2px solid $gradientLilac;
+    }
+
+    &:hover {
+        border-color: $colorBlack;
+        transition: border-color 0.2s ease-in-out;
+    }
+}
+
+.asideHelpLink {
+    color: white;
+    height: 30px;
+    background: url("../images/sprites/formIconSprite.svg") left -30px top -180px no-repeat;
+    padding-left: 50px;
+
+    a {
+        @include smallText;
+        font-weight: 700;
+        color: $colorWhite;
+        text-decoration: none;
+        line-height: 30px;
+    }
+}

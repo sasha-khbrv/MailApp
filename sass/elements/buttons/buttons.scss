@@ -1,0 +1,71 @@
+@import 'button-square.scss';
+
+@mixin btnSettings {
+    appearance: none;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background: none;
+    opacity: 0.4;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+@mixin btnRounded($bg) {
+    appearance: none;
+    
+    height: 60px;
+    width: 60px;
+    
+    background-color: $bg;
+    border: none;
+    border-radius: 50%;    
+    filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.1));
+
+    cursor: pointer;
+    
+    img {
+        pointer-events: none;
+    }
+
+    &:hover img {
+        opacity: 0.4;
+    }
+}
+
+.button-icon {
+    width: 30px;
+    height: 30px;
+    background: url("../images/sprites/formIconSprite.svg") no-repeat; //need to create and change to Button Sprites
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.4;
+    }
+
+
+    //Need more buttons modification
+    &.photo {
+        background-position: left 0 top 0;
+    }
+
+}
+
+//*
+//* MediaQueries
+//*
+@media screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
+    
+}
+
+@media screen and (min-width: $desktop) {
+    .button-icon {            
+        &.photo {
+            background-position: left -30px top 0;
+        }    
+    }
+}

@@ -1,0 +1,125 @@
+@mixin button-square {
+    cursor: pointer;
+    display: block;
+    appearance: none;
+    border: none;
+    padding: 0 30px;
+
+    width: 100%;
+    height: 70px;
+
+    @include mediumText;
+    font-weight: 700;
+    text-decoration: none;
+    color: $colorWhite;
+    text-align: center;
+    line-height: 70px;
+}
+
+.button-square-solid {
+    @include button-square;
+    background-color: $colorBlack;
+}
+
+.button-square-outline {
+    @include button-square;
+    background-color: transparent;
+    border: 1px solid $colorBlack;
+    color: $colorBlack;
+}
+
+
+@mixin walkthroughBtnImage($width, $left, $top) {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 31px;
+    width: $width;
+    height: 8px;
+    background: url("../images/sprites/walkthroughBtnSprite.svg") no-repeat;
+    background-position: left $left top $top;
+}
+
+.button-square-solid.walkthrough {
+    span {
+        display: inline-block;
+        width: 100%;
+        text-align: right;
+        position: relative;
+    }
+
+    &.step1 span::before {
+        @include walkthroughBtnImage(150px, 0, 0);
+    }
+
+    &.step2 span::before {
+        @include walkthroughBtnImage(150px, 0, -10px);
+    }
+
+    &.step3 span::before {
+        @include walkthroughBtnImage(150px, 0, -20px);
+    }
+}
+
+
+
+
+
+
+//*
+//* MediaQueries
+//*
+@media screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
+    .button-square-solid {
+        padding: 0 40px;
+    }
+
+    .button-square-solid.walkthrough {
+        &.step1 span::before {
+            @include walkthroughBtnImage(284px, 0, -30px);
+        }
+    
+        &.step2 span::before {
+            @include walkthroughBtnImage(284px, 0, -40px);
+        }
+    
+        &.step3 span::before {
+            @include walkthroughBtnImage(284px, 0, -50px);
+        }
+    }    
+}
+
+@media screen and (min-width: $desktop) {
+    .button-square-solid,
+    .button-square-outline {
+        border-radius: 2px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .button-square-solid.invert {
+        background-color: $colorWhite;
+        color: $colorBlack;
+    }
+
+    .button-square-solid.walkthrough {
+        span {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            position: relative;
+        }
+
+        &.step1 span::before {
+            background: none;
+        }
+    
+        &.step2 span::before {
+            background: none;
+        }
+    
+        &.step3 span::before {
+            background: none;
+        }
+    }    
+}

@@ -1,0 +1,61 @@
+.navTabs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navTabs__link {
+    display: inline-block;
+    @include xSmallText;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $colorBlack;
+    margin-right: 30px;
+    padding-bottom: 5px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:focus {
+        opacity: 1;
+        outline: 2px solid $colorBlack;
+        outline-offset: 5px;
+    }
+
+    &:hover {
+        opacity: 0.4;
+    }
+
+    &:active {
+        opacity: 0.4;
+    }
+
+    &.currentTab {
+        padding-bottom: 5px;
+        border-bottom: 1px solid $colorBlack;
+        
+        &:hover {
+            padding-bottom: 0;
+        }
+    }
+}
+
+//*
+//* Media Queries
+//*
+
+@media screen and (min-width: $desktop) {
+    .navTabs__link {
+        @include mediumHeading;
+        text-transform: none;
+        margin-right: 240px;
+        padding-bottom: 10px;
+        opacity: 0.5;
+
+        &.currentTab {
+            opacity: 1;
+        }
+    }
+
+    
+}

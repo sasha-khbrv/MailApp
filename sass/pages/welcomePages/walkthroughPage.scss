@@ -1,0 +1,174 @@
+.walkthroughPage-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/patterns/walkthrough-mobile.svg"), $gradientLilac;
+    background-position: right 87px top 64px, left top;
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+
+    position: relative;
+    overflow: hidden;   
+}
+
+.skipLink-container {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+
+    display: flex;
+    align-items: center;
+
+    svg {
+        margin-right: 20px;
+        transition: margin-right 0.6s ease-in;
+    }
+
+    .mediumText {
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    &:hover {
+        svg {
+            margin-right: -36px;
+            transition: margin-right 0.6s ease-out;
+        }
+    }
+}
+
+.walkthrough-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 0 118px;
+
+    .heading {
+        @include mediumHeading;
+        margin: 0 40px;
+    }
+
+    .walkthrough-content-img {
+        width: 100%;
+        height: 175px;
+        background: url("../images/img/walkthrough-img-mobile.svg") center center no-repeat;
+    }
+
+    .text {
+        @include mediumText;
+        margin: 0 40px;
+        font-style: italic;
+    }
+}
+
+.walkthrough__button {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.skip__button {
+    display: none;
+}
+
+//*
+//*Media Queries
+//*
+
+@media screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
+    .walkthroughPage-container {
+        background-image: url("../images/patterns/walkthrough-tablet.svg"), $gradientLilac;
+        background-position: left -120px top, left top;
+    }
+
+    .walkthrough-content {
+        padding: 100px 184px 170px;
+
+        .heading {
+            @include bigHeading;
+        }
+
+        .text {
+            @include basicText;
+        }
+
+        .walkthrough-content-img {
+            width: 100%;
+            height: 306px;
+            background: url("../images/img/walkthrough-img-tablet.svg") center center no-repeat;
+        }
+
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .skipLink-container {
+        display: none;
+    }
+    .walkthroughPage-container {
+        background-image: url("../images/patterns/walkthrough-desktop.svg"), $gradientLilac;
+        background-position: left top, left top;
+    }
+
+    .walkthroughPage-container::before {
+            content: "Step 2";
+            position: absolute;
+            top: 80px;
+            left: 50px;
+            height: 510px;
+            background: url("../images/sprites/walkthroughBtnSprite.svg") left -110px top -60px no-repeat;
+            padding-left: 28px;
+            padding-top: 26px;
+            @include xSmallText;
+            text-transform: uppercase;
+    }
+
+    .walkthroughPage-content {
+        max-width: 1140px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .walkthrough-content {
+        position: relative;
+        justify-content: center;
+        padding-top: 95px;     
+
+        .heading {
+            @include hugeHeading;
+            width: 500px;
+            margin-top: 190px;
+        }
+
+        .text {
+            @include basicText;
+            margin-top: 40px;
+            width: 500px;
+        }
+
+        .walkthrough-content-img {
+            position: absolute;
+            bottom: 170px;
+            right: -170px;
+            width: 720px;
+            height: 680px;
+            background: url("../images/img/walkthrough-img-desktop.svg") center center no-repeat;
+            background-size: contain;
+        }
+    }
+
+    .walkthrough__button {
+        position: absolute;
+        width: 260px;
+        bottom: 100px;
+        right: 300px;
+    }
+
+    .skip__button {
+        display: block;
+        position: absolute;
+        width: 260px;
+        bottom: 100px;
+        right: 0;
+    }
+}

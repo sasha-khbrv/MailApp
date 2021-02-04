@@ -1,0 +1,27 @@
+<svg width="60" height="210" viewBox="0 0 60 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 75.5H24V78.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="11" cy="75.5" r="4" stroke="black" stroke-width="2" stroke-linecap="square"/>
+<circle cx="15" cy="45" r="9" stroke="black" stroke-width="2" stroke-linecap="square"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15 45C16.1 45 17 44.1 17 43C17 41.9 16.1 41 15 41C13.9 41 13 41.9 13 43C13 44.1 13.9 45 15 45V45Z" stroke="black" stroke-width="2"/>
+<path d="M21.6629 50.6448C20.7052 48.8635 17.8526 48 15 48C12.2113 48 9.42261 48.8253 8.4043 50.5265" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M16 165.5H24V168.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="11" cy="165.5" r="4" stroke="black" stroke-width="2" stroke-linecap="square"/>
+<rect x="7" y="128" width="16" height="14" rx="2" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22 129L15 136L8 129" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7 108H17" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M7 101L23 101" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M18 6H19C19 5.44772 18.5523 5 18 5V6ZM12 6V5C11.4477 5 11 5.44772 11 6H12ZM18 9H17C17 9.55228 17.4477 10 18 10V9ZM12 9V10C12.5523 10 13 9.55228 13 9H12ZM18 5H12V7H18V5ZM19 9V6H17V9H19ZM22 8H18V10H22V8ZM25 11C25 9.34315 23.6569 8 22 8V10C22.5523 10 23 10.4477 23 11H25ZM25 21V11H23V21H25ZM22 24C23.6569 24 25 22.6569 25 21H23C23 21.5523 22.5523 22 22 22V24ZM8 24H22V22H8V24ZM5 21C5 22.6569 6.34315 24 8 24V22C7.44772 22 7 21.5523 7 21H5ZM5 11V21H7V11H5ZM8 8C6.34315 8 5 9.34315 5 11H7C7 10.4477 7.44772 10 8 10V8ZM12 8H8V10H12V8ZM11 6V9H13V6H11ZM16 16C16 16.5523 15.5523 17 15 17V19C16.6569 19 18 17.6569 18 16H16ZM15 15C15.5523 15 16 15.4477 16 16H18C18 14.3431 16.6569 13 15 13V15ZM14 16C14 15.4477 14.4477 15 15 15V13C13.3431 13 12 14.3431 12 16H14ZM15 17C14.4477 17 14 16.5523 14 16H12C12 17.6569 13.3431 19 15 19V17Z" fill="black"/>
+<path d="M46 75.5H54V78.5" stroke="#E3A7FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="41" cy="75.5" r="4" stroke="#E3A7FF" stroke-width="2" stroke-linecap="square"/>
+<circle cx="45" cy="45" r="9" stroke="#E3A7FF" stroke-width="2" stroke-linecap="square"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M45 45C46.1 45 47 44.1 47 43C47 41.9 46.1 41 45 41C43.9 41 43 41.9 43 43C43 44.1 43.9 45 45 45V45Z" stroke="#E3A7FF" stroke-width="2"/>
+<path d="M51.6629 50.6448C50.7052 48.8635 47.8526 48 45 48C42.2113 48 39.4226 48.8253 38.4043 50.5265" stroke="#E3A7FF" stroke-width="2" stroke-linecap="round"/>
+<path d="M46 165.5H54V168.5" stroke="#E3A7FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="41" cy="165.5" r="4" stroke="#E3A7FF" stroke-width="2" stroke-linecap="square"/>
+<rect x="37" y="128" width="16" height="14" rx="2" stroke="#E3A7FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M52 129L45 136L38 129" stroke="#E3A7FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M37 108H47" stroke="#E3A7FF" stroke-width="2" stroke-linecap="round"/>
+<path d="M37 101L53 101" stroke="#E3A7FF" stroke-width="2" stroke-linecap="round"/>
+<path d="M48 6H49C49 5.44772 48.5523 5 48 5V6ZM42 6V5C41.4477 5 41 5.44772 41 6H42ZM48 9H47C47 9.55228 47.4477 10 48 10V9ZM42 9V10C42.5523 10 43 9.55228 43 9H42ZM48 5H42V7H48V5ZM49 9V6H47V9H49ZM52 8H48V10H52V8ZM55 11C55 9.34315 53.6569 8 52 8V10C52.5523 10 53 10.4477 53 11H55ZM55 21V11H53V21H55ZM52 24C53.6569 24 55 22.6569 55 21H53C53 21.5523 52.5523 22 52 22V24ZM38 24H52V22H38V24ZM35 21C35 22.6569 36.3431 24 38 24V22C37.4477 22 37 21.5523 37 21H35ZM35 11V21H37V11H35ZM38 8C36.3431 8 35 9.34315 35 11H37C37 10.4477 37.4477 10 38 10V8ZM42 8H38V10H42V8ZM41 6V9H43V6H41ZM46 16C46 16.5523 45.5523 17 45 17V19C46.6569 19 48 17.6569 48 16H46ZM45 15C45.5523 15 46 15.4477 46 16H48C48 14.3431 46.6569 13 45 13V15ZM44 16C44 15.4477 44.4477 15 45 15V13C43.3431 13 42 14.3431 42 16H44ZM45 17C44.4477 17 44 16.5523 44 16H42C42 17.6569 43.3431 19 45 19V17Z" fill="#E3A7FF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M37 189C37 187.895 37.8954 187 39 187H51C52.1046 187 53 187.895 53 189V199.444L47.6667 204.778V199.444H39C37.8954 199.444 37 198.549 37 197.444V189Z" stroke="#E3A7FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

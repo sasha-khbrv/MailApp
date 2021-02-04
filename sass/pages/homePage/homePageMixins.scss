@@ -1,0 +1,32 @@
+@mixin homePageModules {
+    margin-left: 100px;
+    padding-top: 80px;
+    padding-right: 71px;
+    overflow-y: scroll;
+    border-right: 1px solid rgba(0, 0, 0, 0.05 );
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        margin-bottom: 60px;
+
+        .heading3 {
+            flex-basis: 200px;
+            margin-bottom: 10px;
+        }
+
+        .textLabel {
+            @include textLabel($colorWhite, $colorBlack);
+        }
+
+        a {
+            @include xSmallText;
+            @include linkExternal;
+                      
+        }
+    }
+  
+}

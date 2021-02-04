@@ -1,0 +1,44 @@
+.remainderItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 60px;
+
+    transition: opacity 0.3s ease-in-out;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 2px solid $colorBlack;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .date {
+        @include xSmallText;
+        text-transform: uppercase;
+        opacity: 0.5;
+        margin-bottom: 5px;
+    }
+
+    .label {
+        @include basicText;
+    }
+
+    &:hover {
+        opacity: 0.6;
+        cursor: pointer;
+        transition: opacity 0.3s ease-in-out;
+    }
+}

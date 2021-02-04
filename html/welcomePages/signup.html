@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mail UI Home</title>
+    <link rel="stylesheet" href="../../css/main.css">
+  </head>
+<body>
+  <div class="signupPage-container">
+    <div class="signupPage-header">
+      <div class="navTabs">
+        <a href="login.html" class="navTabs__link">Log in</a>
+        <a href="signup.html" class="navTabs__link currentTab">Sign up</a>
+      </div>
+    </div>
+
+    <div class="signup-container">
+      <div class="signup__btnPhoto">
+        <button class="button-icon photo"></button>
+      </div>
+
+      <form action="" name="signupForm" class="signupForm-container">
+        <div class="signupnForm__userData">
+          <div class="signup__imgProfile">
+            <img  class="imgProfile" src="../../images/avatars/jason.png" alt="">
+          </div>
+
+          <label class="formItem username" for="userName" >            
+            <input class="formItem__input" type="text" id="userName" name="userName" required>
+            <span class="formItem__placeholder">Name</span>
+          </label>
+
+          <label class="formItem login" for="userLogin" >            
+            <input class="formItem__input" type="text" id="userLogin" name="userLogin" required>
+            <span class="formItem__placeholder">Login</span>
+          </label>
+  
+          <label class="formItem password" for="password" >
+            <a href="" class="formItem__helpLink">Help</a>
+            <input class="formItem__input" type="password" id="password" name="password" required>
+            <span class="formItem__placeholder">Password</span>            
+          </label>
+        </div>
+        <div class="signupForm__button">
+          <a href="walkthrough.html" style="text-decoration: none;"> <!-- For example. Bad decision -->
+            <button class="button-square-solid invert walkthrough step1" type="submit" form="signupForm">
+              <span>Next</span>
+            </button>
+          </a>
+        </div>
+      </form>
+    </div>
+    <div class="asideLink-container">
+      <div class="asideHelpLink">
+        <a href="">Need help?</a>
+      </div>  
+    </div>
+  </div>
+</body>
+</html>

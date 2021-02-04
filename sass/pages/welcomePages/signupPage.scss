@@ -1,0 +1,163 @@
+.signupPage-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/patterns/signup-mobile.svg"), $gradientLilac;
+    background-position: left -80px top 0, left top;
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+
+    position: relative;    
+
+    .signupPage-header {
+        position: absolute;
+        top: 85px;
+        right: -15px;
+        transform: rotate(90deg);
+    } 
+
+}
+
+.signup-container {
+    position: relative;    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.signup__btnPhoto{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+} 
+
+.signupForm-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.signupnForm__userData{
+    margin: 0 30px;
+
+    .signup__imgProfile {
+        width: 120px;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    
+        .imgProfile {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit:cover;
+        }
+    }
+}
+
+.signupForm__button {    
+    margin-top: 50px;
+}
+
+.asideLink-container {
+    display: none;
+}
+
+//*
+//*Media Queries
+//*
+
+@media screen and (min-width: $tabletMin) and (max-width: $tabletMax) {
+    .signupPage-container {
+        background-image: url("../images/patterns/signup-tablet.svg"), $gradientLilac;
+        background-position: right -180px top 0, left top;
+    }
+
+    .signupForm-container {
+        height: 100vh;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .signupnForm__userData {
+        width: 315px;
+        align-self: center;
+    }
+
+    .signupForm__button {    
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .signupPage-container {
+        background-image: url("../images/patterns/signup-desktop.svg"), $gradientLilac;
+        background-position: right bottom, left top;
+        background-size: cover, cover;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+
+        &::before {
+            content: "Step 1";
+            position: absolute;
+            top: 80px;
+            left: 50px;
+            height: 510px;
+            background: url("../images/sprites/walkthroughBtnSprite.svg") left 0 top -60px no-repeat;
+            padding-left: 28px;
+            @include xSmallText;
+            text-transform: uppercase;
+        }
+
+        .signupPage-header {
+            position: initial;
+            display: flex;
+            justify-content: center;
+            transform: rotate(0deg);
+            margin-bottom: 90px;
+        }
+    }
+
+    .asideLink-container {
+        display: block;
+        position: absolute;
+        bottom: 110px;
+        right: 100px;
+    }
+
+    .signup-container {
+        width: 400px;
+        height: 540px;
+        background: #000000;
+        box-shadow: 0px 60px 120px rgba(0, 0, 0, 0.3);
+        border-radius: 2px;
+        position: relative;
+    }
+
+    .signup__btnPhoto{
+        position: absolute;
+        top: 30px;
+        left: 340px;
+    } 
+
+    .signupForm__button {
+        margin: 30px;
+        margin-top: 40px;
+    }
+
+    .signupnForm__userData{    
+        .signup__imgProfile {
+            margin-bottom: 50px;
+        }
+    }
+}

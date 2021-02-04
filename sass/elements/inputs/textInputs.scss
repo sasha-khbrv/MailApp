@@ -1,0 +1,126 @@
+//*
+//*Mixins
+//*
+@mixin formInputIcon {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: url(../images/sprites/formIconSprite.svg) no-repeat;
+}
+
+//*
+//*Input block
+//*
+.formItem {
+    position: relative;
+    display: block;
+    height: 42px;
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+    
+    &.login::before {
+        @include formInputIcon;
+        background-position: left 0 top -30px;        
+    }
+
+    &.password::before {
+        @include formInputIcon;
+        background-position: left 0 top -60px;        
+    }
+
+    //Need others icons
+    &.username::before {
+        @include formInputIcon;
+        background-position: left 0 top -120px;        
+    }
+}
+
+//Pseudo placeholders
+.formItem__placeholder {
+    position: absolute;
+    display: inline-block;     
+    height: 30px;
+    top: 0;
+    left: 45px;
+
+    @include mediumText;
+    line-height: 30px;
+    
+    pointer-events: none;
+}
+
+//Text inputs
+.formItem__input {
+    width: 100%;
+    height: 42px;
+    border: none;
+    background:transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2 );
+    padding-left: 45px;
+}
+
+//Aside help links
+.formItem__helpLink {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @include xSmallText;
+    line-height: 30px;
+    opacity: 0.4;
+    text-decoration: none;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &:active {
+        opacity: 1;
+    }
+}
+
+//*
+//*Input behavior
+//*
+.formItem__input:focus + .formItem__placeholder,
+.formItem__input:valid + .formItem__placeholder {
+        top: -11px;
+        font-size: 0.8rem;
+        opacity: 0.4;
+}
+
+//*
+//*Media Queries
+//*
+
+@media screen and (min-width: $desktop) {
+    .formItem {    
+        &.login::before {
+            background-position: left -30px top -30px;        
+        }
+    
+        &.password::before {
+            background-position: left -30px top -60px;        
+        }
+
+        &.username::before {
+            background-position: left -30px top -120px;        
+        }
+    }
+
+    .formItem__placeholder {
+        color: $colorWhite;
+    }
+
+    .formItem__input {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2 );
+        color: $colorWhite;
+    }
+
+}
